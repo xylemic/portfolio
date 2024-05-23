@@ -1,0 +1,245 @@
+body {
+  font-family: monospace;
+  background: #f0f0f0;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+h3 {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+h3 a {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+nav {
+  margin: 1.2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.ascii {
+  font-size: 0.1rem;
+  line-height: 1;
+  text-align: left;
+  display: inline-block;
+}
+
+.active {
+  background: #333;
+  color: #fff;
+}
+
+/* Work section */
+
+.work {
+  height: 100%;
+  width: 100%;
+  /* background: #d68910; */
+}
+
+/* .work .h3 {
+  padding-top: 50px;
+  color: #fff;
+} */
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 15px;
+  width: 100%;
+  /* height: 700px; */
+  align-items: center;
+  /* background: #d68910; */
+}
+
+.item {
+  height: 200px;
+  /* color: white; */
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: normal;
+  font-family: monospace, sans-serif;
+  font-size: 0.8em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.item1 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    40deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 188, 245, 1) 73%,
+    rgba(9, 188, 245, 1) 73%
+  );
+}
+
+.item2 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    40deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(176, 176, 176, 1) 73%
+  );
+}
+
+.item3 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    40deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(252, 252, 252, 1) 0%
+  );
+}
+
+.item4 {
+  background: rgb(18, 18, 28);
+  background: linear-gradient(
+    40deg,
+    rgba(18, 18, 28, 1) 0%,
+    rgba(43, 8, 8, 1) 28%
+  );
+}
+
+.item .grid-name,
+.work a {
+  display: none;
+}
+
+.item:hover {
+  background: #fff;
+  color: #000;
+  border: none;
+  transform: scale(1.08);
+}
+
+.item:hover h4 {
+  display: block;
+}
+
+.item:hover a {
+  display: block;
+}
+
+.work a {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.item:hover p {
+  display: block;
+}
+
+.contact {
+  text-align: left;
+  width: 40%;
+  height: 100%;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+.contact p {
+  font-size: 1.3em;
+}
+
+.contact ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.contact ul li a {
+  /* text-decoration: none; */
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.about-me {
+  display: block;
+  width: 60%;
+  text-align: left;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.about-icon-wrapper {
+  margin-top: 70px;
+}
+
+.about-icon {
+  background-color: #000;
+  font-size: 1.5em;
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.about-icon a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .work-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .item {
+    width: 100%;
+    transition: none;
+  }
+
+  .item:hover {
+    transform: none;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .about-me {
+    width: 100%;
+  }
+
+  nav {
+    margin: 1.2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.8rem;
+  }
+}
